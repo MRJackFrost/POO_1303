@@ -18,13 +18,13 @@ int main() {
     double soma = (ac1 + ac2 + af);
     
     if(soma > 5){
-        cout << "Parabens você passou";
+        cout << "Parabens você passou com: "<< soma;
     }
     if(soma == 5){
-        cout << "Quase morreu na praia";
+        cout << "Quase morreu na praia com: " << soma;
     }
     if(soma < 5) {
-     cout << "Você foi reprovado";   
+     cout << "Você foi reprovado com: " << soma;   
     }
     return 0;
 }
