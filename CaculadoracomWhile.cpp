@@ -1,39 +1,38 @@
-// Online C++ compiler to run C++ program online
-#include <iostream>
-using namespace std;
+#include <iostream> //Puxando uma biblioteca externa para receber valor do usuario
+using namespace std; // Chamando a biblioteca padrão
 
-int main() {
-    char op;
-    float num1, num2;
-    char per = 's';
+int main() {//abrindo o codigo principal
+    char op; //definindo variavel
+    float num1, num2; //definindo variavel
+    char per = 's'; //definindo variavel e o valor
     
-    while(per == 's'){
+    while(per == 's'){ //enquanto per for igual a s faça
         
-        cout << "ENTRE COM O OPERADOR: +, -, /, *: " << endl;
-        cin  >> op;
-        cout << "ENTRE COM OS VALORES" << endl;
-        cin  >> num1 >> num2;
+        cout << "ENTRE COM O OPERADOR: +, -, /, *: " << endl;//mensagem na interface do usuario
+        cin  >> op; //solicitando o valor do char
+        cout << "ENTRE COM OS VALORES" << endl; //mensagem na interface do usuario
+        cin  >> num1 >> num2; //solicitando o valor de num1 e num2
     
          switch(op){
-          case '+':
-          cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
-             break;
-          case '-':
-          cout << num1 << " - " << num2 << " = " << num1 - num2 << endl;
-            break;
-          case '/':
-          cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
-             break;
-          case '*':
-          cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
-            break;
-        default:
+          case '+'://caso valor for +
+          cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;//faça a conta e mostre para o usuario
+             break;//pare o switch
+          case '-'://caso valor for -
+          cout << num1 << " - " << num2 << " = " << num1 - num2 << endl;//faça a conta e mostre para o usuario
+            break;//pare o switch
+          case '/'://caso valor for /
+          cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;//faça a conta e mostre para o usuario
+             break;//pare o switch
+          case '*'://caso valor for *
+          cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;//faça a conta e mostre para o usuario
+            break;//pare o switch
+        default://se não for nenhum dos valores necessarios
          cout << "OPERADOR ERRADO, POR FAVOR INSIRA CORRETAMENTE" << endl;
-        break;
+        break;//pare o switch
     }
-    cout << "quer continuar com a calculadora? s/n"<< endl;
-    cin >> per;
+    cout << "quer continuar com a calculadora? s/n"<< endl; //mensagem para o usuario
+    cin >> per; //pedindo o valor de per
     }
-     cout << "Calculadora Finalizada"<< endl;
+     cout << "Calculadora Finalizada"<< endl; //mensagem para o usuario
     return 0;
 }
