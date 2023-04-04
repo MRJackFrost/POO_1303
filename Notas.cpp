@@ -19,7 +19,7 @@ int main() { //abrindo a estrutura principal
     soma = (soma / 4); //calculando a média
     
     if(soma >= 7){ //se a soma for maior igual a 7
-        cout << "Parabens você passou com: " <<endl; //mensagem para o usuario
+        cout << "Parabens você passou com: " <<soma <<endl; //mensagem para o usuario
     }
     else if(soma >= 5 && soma <7){
          cout << "Você esta de recuperação com: "<<soma <<endl;
